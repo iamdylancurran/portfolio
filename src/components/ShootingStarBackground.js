@@ -78,8 +78,8 @@ function createShootingStars() {
 
     styles += `
       &:nth-child(${i}) {
-        top: calc(${Math.round(Math.random() * 1080)}px);
-        left: calc(${Math.round(Math.random() * 1920)}px);
+        top: calc(${Math.round(Math.random() * 100)}vh);
+        left: calc(${Math.round(Math.random() * 100)}vw);
         animation-delay: ${delay};
 
         &::before,
