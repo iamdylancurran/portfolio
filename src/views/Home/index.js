@@ -6,17 +6,18 @@ import Me from './sections/me';
 const Section = styled.section`
   width: 100%;
   overflow-x: hidden;
-  margin-bottom: ${(props) => props.marginBottom};
+  padding: ${(props) => props.padding};
+  background: ${(props) => props.background};
 `;
 
 const Home = () => {
   return (
     <div>
-      <Section id="hello" marginBottom="4rem">
+      <Section id="hello">
         <Hello />
       </Section>
 
-      <Section id="me">
+      <Section id="me" padding="4rem 0 0 0">
         <Me />
       </Section>
     </div>

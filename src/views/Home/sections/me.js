@@ -21,13 +21,14 @@ const Me = () => {
       </Row>
       <Row>
         <SubHeader color="primary" align="center" fontWeight="300" style={{ marginBottom: 0 }}>
-          Hey!
+          Dia dhuit!
         </SubHeader>
       </Row>
       <Row>
         <Body align="center">
           My name is Dylan Curran. I&apos;m a front-end web developer, product manager, consultant,
-          and budding writer.
+          and budding writer. Originally from the south of Ireland, I&apos;m currently based in
+          Toronto, Canada.
         </Body>
       </Row>
 
