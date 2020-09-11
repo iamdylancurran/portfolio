@@ -1,28 +1,36 @@
 import styled from 'styled-components';
 
+const breakpoints = {
+  xs: '480px',
+  sm: '600px',
+  md: '960px',
+  lg: '1280px',
+  xl: '1920px',
+};
+
 const media = {
   xs: (styles) => `
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: ${breakpoints.xs}) {
       ${styles}
     }
   `,
   sm: (styles) => `
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: ${breakpoints.sm}) {
       ${styles}
     }
   `,
   md: (styles) => `
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: ${breakpoints.md}) {
       ${styles}
     }
   `,
   lg: (styles) => `
-    @media only screen and (max-width: 1280px) {
+    @media only screen and (max-width: ${breakpoints.lg}) {
       ${styles}
     }
   `,
   xl: (styles) => `
-    @media only screen and (max-width: 1920px) {
+    @media only screen and (max-width: ${breakpoints.xl}) {
       ${styles}
     }
   `,
@@ -30,13 +38,17 @@ const media = {
 
 export const Grid = styled.div`
   display: flex;
+  flex-direction: ${(props) => props.direction};
   align-items: ${(props) => props.alignItems};
   justify-content: ${(props) => props.justifyContent};
   height: ${(props) => props.height};
+  max-width: ${(props) => breakpoints[props.maxWidth]};
+  margin: 0 auto;
 `;
 
 export const Row = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 export const Col = styled.div`
