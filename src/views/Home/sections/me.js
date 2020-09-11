@@ -9,6 +9,8 @@ const ProfilePicture = styled.img.attrs({
   border-radius: 50%;
   max-width: 150px;
   height: auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 `;
 
 const Me = () => {
@@ -19,13 +21,29 @@ const Me = () => {
       </Row>
       <Row>
         <SubHeader color="primary" align="center" fontWeight="300" style={{ marginBottom: 0 }}>
-          Hey.
+          Hey!
         </SubHeader>
       </Row>
       <Row>
         <Body align="center">
-          Hi, my name is Dylan Curran. I&apos;m a front-end web developer, product manager,
-          consultant, and budding writer.
+          My name is Dylan Curran. I&apos;m a front-end web developer, product manager, consultant,
+          and budding writer.
+        </Body>
+      </Row>
+
+      <Row>
+        <Body align="center">
+          Since beginning my journey as a freelance developer almost ten years ago, I&apos;ve done
+          remote work for businesses, consulted for startups, written articles for major newspapers,
+          appeared on national TV, and started several of my own companies.
+        </Body>
+      </Row>
+
+      <Row>
+        <Body align="center">
+          I like to wear many hats, and I&apos;m constantly looking to adapt and improve in whatever
+          I&apos;m doing. I love creating beautiful but functional UIs, and giving people that{' '}
+          <span style={{ color: '#427D7C' }}>wow</span> experience when they open up a website.
         </Body>
       </Row>
     </Grid>
