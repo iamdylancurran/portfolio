@@ -1,8 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Grid, Row, Col } from '../../../components/layout/Grid';
+import { Grid } from '../../../components/layout/Grid';
 import { HexagonGrid, HexagonItem } from '../../../components/misc/HexagonGrid';
-import { SubHeader, Body } from '../../../components/typography/Typography';
+import { SubHeader } from '../../../components/typography/Typography';
 
 const skills = [
   {
