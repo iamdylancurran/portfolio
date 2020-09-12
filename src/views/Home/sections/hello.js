@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ShootingStarBackground from '../../../components/ShootingStarBackground';
+import ShootingStarBackground from '../../../components/misc/ShootingStarBackground';
 import { Row } from '../../../components/layout/Grid';
 import { Header, SubHeader } from '../../../components/typography/Typography';
 
