@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Hello from './sections/hello';
 import Me from './sections/me';
 import Skills from './sections/skills';
+import Projects from './sections/projects';
 
 const Section = styled.section`
   width: 100%;
@@ -21,8 +22,12 @@ const Home = () => {
         <Me />
       </Section>
 
-      <Section id="skills" padding="4rem 0 4rem 0" style={{ backgroundColor: '#171923' }}>
+      <Section id="skills" padding="4rem 0 8rem 0" style={{ backgroundColor: '#171923' }}>
         <Skills />
+      </Section>
+
+      <Section id="projects" padding="4rem 0 8rem 0">
+        <Projects />
       </Section>
     </div>
   );

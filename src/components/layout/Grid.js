@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
-const breakpoints = {
+export const breakpoints = {
   xs: '480px',
-  sm: '600px',
+  sm: '768px',
   md: '960px',
   lg: '1280px',
   xl: '1920px',
 };
 
-const media = {
+export const media = {
   xs: (styles) => `
     @media only screen and (max-width: ${breakpoints.xs}) {
       ${styles}
@@ -38,6 +38,7 @@ const media = {
 
 export const Grid = styled.div`
   display: flex;
+  flex-wrap: ${(props) => props.flexWrap};
   flex-direction: ${(props) => props.direction};
   align-items: ${(props) => props.alignItems};
   justify-content: ${(props) => props.justifyContent};
