@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Hello from './sections/hello';
 import Me from './sections/me';
 import Skills from './sections/skills';
-import Projects from './sections/projects';
+import Projects from './sections/work';
 
 const Section = styled.section`
   width: 100%;

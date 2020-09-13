@@ -1,32 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Grid, breakpoints } from '../../../components/layout/Grid';
+import { Grid } from '../../../components/layout/Grid';
 import { SubHeader, Body, Header } from '../../../components/typography/Typography';
-
-const Card = styled.div`
-  flex: 0 1 calc(31% - 1em);
-  background-color: white;
-  padding: 1rem;
-  border-radius: 5px;
-
-  @media screen and (max-width: ${breakpoints.sm}) {
-    flex: 0 1 calc(100%);
-    margin: 0.5rem;
-    padding: 0.5rem;
-  }
-`;
-
-const Divider = styled.hr`
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
-  margin-bottom: 2rem;
-`;
-
-const SvgIcon = styled.img`
-  display: block;
-  min-width: 6rem;
-  max-width: 100%;
-  margin: 0 auto;
-`;
+import Card from '../../../components/misc/Card';
+import Divider from '../../../components/misc/Divider';
+import SvgIcon from '../../../components/misc/SvgIcon';
 
 const frontEndSkills = ['HTML', 'CSS', 'JavaScript', 'React', 'NextJS', 'Vue'];
 const backEndSkills = ['NodeJS', 'Express', 'MongoDB', 'SQL', 'Serverless', 'AWS'];
@@ -46,7 +23,7 @@ const Skills = () => {
         Skills
       </Header>
       <Grid maxWidth="lg" flexWrap="wrap" justifyContent="space-between">
-        <Card>
+        <Card flexWidth="31" padding="1" rounded>
           <SvgIcon src="/icons/bolt.svg" />
           <SubHeader color="primary" align="center" margin="1.5rem 0">
             Front-End
@@ -66,7 +43,7 @@ const Skills = () => {
             </Body>
           ))}
         </Card>
-        <Card>
+        <Card flexWidth="31" padding="1" rounded>
           <SvgIcon src="/icons/build.svg" />
           <SubHeader color="primary" align="center" margin="1.5rem 0">
             Back-End
@@ -85,7 +62,7 @@ const Skills = () => {
             </Body>
           ))}
         </Card>
-        <Card>
+        <Card flexWidth="31" padding="1" rounded>
           <SvgIcon src="/icons/design.svg" />
           <SubHeader color="primary" align="center" margin="1.5rem 0">
             Design
