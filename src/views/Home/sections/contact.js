@@ -10,6 +10,7 @@ const Input = styled.input`
   margin: 1rem 0;
   box-sizing: border-box;
   font-family: 'Fira Sans';
+  font-size: 1.3rem;
 
   &:focus {
     outline: 1px solid ${({ theme }) => theme.colors.primary.main};
@@ -23,8 +24,9 @@ const Input = styled.input`
 const TextArea = styled.textarea`
   width: 100%;
   min-height: 150px;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   margin: 1rem 0;
+  font-size: 1.3rem;
   font-family: 'Fira Sans';
   box-sizing: border-box;
   resize: none;
@@ -55,15 +57,20 @@ const Contact = () => {
           <input type="hidden" name="form-name" value="contact" />
           <Row>
             <Label htmlFor="name">Name:</Label>
-            <Input id="name" type="text" name="name" required />
+            <Input id="name" type="text" name="name" placeholder="Gordon Ramsey" required />
           </Row>
           <Row>
             <Label htmlFor="email">Email:</Label>
-            <Input type="email" name="email" required />
+            <Input type="email" name="email" placeholder="gor.don@lambsauce.com" required />
           </Row>
           <Row>
             <Label htmlFor="message">Message:</Label>
-            <TextArea type="text" name="message" required />
+            <TextArea
+              type="text"
+              name="message"
+              placeholder="...I probably shouldn't put an explicit Gordon Ramsey quote on my professional portfolio."
+              required
+            />
           </Row>
           <Row>
             <Button type="submit">Send</Button>
