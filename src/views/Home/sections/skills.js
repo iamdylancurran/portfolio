@@ -24,7 +24,7 @@ const Skills = () => {
       </Header>
       <Grid maxWidth="lg" flexWrap="wrap" justifyContent="space-between">
         <Card flexWidth="31" padding="1" rounded>
-          <SvgIcon src="/icons/bolt.svg" alt="Lightning Bolt" />
+          <SvgIcon src="/icons/bolt.svg" alt="Lightning Bolt" size="6rem" />
           <SubHeader color="primary" align="center" margin="1.5rem 0">
             Front-End
           </SubHeader>
@@ -44,7 +44,7 @@ const Skills = () => {
           ))}
         </Card>
         <Card flexWidth="31" padding="1" rounded>
-          <SvgIcon src="/icons/build.svg" alt="Wrench" />
+          <SvgIcon src="/icons/build.svg" alt="Wrench" size="6rem" />
           <SubHeader color="primary" align="center" margin="1.5rem 0">
             Back-End
           </SubHeader>
@@ -63,7 +63,7 @@ const Skills = () => {
           ))}
         </Card>
         <Card flexWidth="31" padding="1" rounded>
-          <SvgIcon src="/icons/design.svg" alt="Star" />
+          <SvgIcon src="/icons/design.svg" alt="Star" size="6rem" />
           <SubHeader color="primary" align="center" margin="1.5rem 0">
             Design
           </SubHeader>
