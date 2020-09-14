@@ -21,6 +21,11 @@ const tastyTurquoise = {
   dark: '#427D7C',
 };
 
+const deepChestnut = {
+  main: '#BD3D40',
+  light: '#CC6164',
+};
+
 const theme = {
   spacing: (factor) => `${0.8 * factor}rem`,
   typography: {
@@ -46,6 +51,9 @@ const theme = {
     primary: {
       ...tastyTurquoise,
     },
+    accent: {
+      ...deepChestnut,
+    },
     grey: {
       ...greys,
     },
@@ -58,6 +66,7 @@ const theme = {
     background: {
       default: greys[50],
       secondary: '#fff',
+      dark: greys[900],
     },
   },
   fonts: ['Fira Sans', 'sans-serif'],

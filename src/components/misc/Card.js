@@ -12,7 +12,7 @@ const Card = styled.div`
 
   @media screen and (max-width: ${breakpoints.sm}) {
     flex: 0 1 calc(100%);
-    margin: 0.5rem;
+    margin: 1.5rem;
     padding: ${(props) => props.padding / 2}rem;
   }
 `;

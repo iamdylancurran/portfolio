@@ -5,6 +5,7 @@ import { SubHeader, Body } from '../../../components/typography/Typography';
 
 const ProfilePicture = styled.img.attrs({
   src: '/images/prof.jpg',
+  alt: 'Dylan Curran smilling.',
 })`
   border-radius: 50%;
   max-width: 150px;
