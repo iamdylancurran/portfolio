@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Grid, Row } from '../../../components/layout/Grid';
+import { Grid, Row, breakpoints } from '../../../components/layout/Grid';
 import { Header } from '../../../components/typography/Typography';
 import Button from '../../../components/misc/Button';
 
@@ -13,6 +13,10 @@ const Input = styled.input`
 
   &:focus {
     outline: 1px solid ${({ theme }) => theme.colors.primary.main};
+  }
+
+  @media only screen and (max-width: ${breakpoints.sm}) {
+    margin: 1rem 1.5rem;
   }
 `;
 
@@ -28,6 +32,16 @@ const TextArea = styled.textarea`
   &:focus {
     outline: 1px solid ${({ theme }) => theme.colors.primary.main};
   }
+
+  @media only screen and (max-width: ${breakpoints.sm}) {
+    margin: 1rem 1.5rem;
+  }
+`;
+
+const Label = styled.label`
+  @media only screen and (max-width: ${breakpoints.sm}) {
+    margin: 0 1.5rem;
+  }
 `;
 
 const Contact = () => {
@@ -40,15 +54,15 @@ const Contact = () => {
         <form name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
           <Row>
-            <label htmlFor="name">Name:</label>
+            <Label htmlFor="name">Name:</Label>
             <Input id="name" type="text" name="name" required />
           </Row>
           <Row>
-            <label htmlFor="email">Email:</label>
+            <Label htmlFor="email">Email:</Label>
             <Input type="email" name="email" required />
           </Row>
           <Row>
-            <label htmlFor="message">Message:</label>
+            <Label htmlFor="message">Message:</Label>
             <TextArea type="text" name="message" required />
           </Row>
           <Row>
