@@ -37,13 +37,13 @@ const Home = () => {
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>
-        <Section id="projects" padding="4rem 0 4rem 0">
+        <Section id="projects" padding="2rem 0 2rem 0">
           <Projects />
         </Section>
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>
-        <Section id="contact" padding="4rem 0 4rem 0">
+        <Section id="contact" padding="2rem 0 2rem 0">
           <Contact />
         </Section>
       </Suspense>
