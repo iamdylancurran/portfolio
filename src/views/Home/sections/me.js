@@ -17,7 +17,7 @@ const ProfilePicture = styled.img.attrs({
 const Me = () => {
   return (
     <Grid alignItems="center" justifyContent="center" direction="column" maxWidth="sm">
-      <Row>
+      <Row style={{ alignItems: 'flex-start' }}>
         <ProfilePicture />
       </Row>
       <Row>

@@ -33,6 +33,10 @@ const footerLinks = [
     link: 'https://www.linkedin.com/in/dylancurran/',
     text: 'LinkedIn',
   },
+  {
+    link: '/resume',
+    text: 'Resume',
+  },
 ];
 
 const Footer = () => {

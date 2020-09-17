@@ -65,12 +65,7 @@ const Contact = () => {
           </Row>
           <Row>
             <Label htmlFor="message">Message:</Label>
-            <TextArea
-              type="text"
-              name="message"
-              placeholder="...I probably shouldn't put an explicit Gordon Ramsey quote on my professional portfolio."
-              required
-            />
+            <TextArea type="text" name="message" placeholder="A nice message." required />
           </Row>
           <Row>
             <Button type="submit">Send</Button>
