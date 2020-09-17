@@ -27,9 +27,8 @@ const Me = () => {
       </Row>
       <Row>
         <Body align="center">
-          My name is Dylan Curran. I&apos;m a front-end web developer, product manager, consultant,
-          and budding writer. Originally from the south of Ireland, I&apos;m currently based in
-          Toronto, Canada.
+          My name is Dylan Curran. I&apos;m a front-end web developer, consultant, and budding
+          writer. Originally from the south of Ireland, I&apos;m currently based in Toronto, Canada.
         </Body>
       </Row>
 
@@ -37,15 +36,15 @@ const Me = () => {
         <Body align="center">
           Since beginning my journey as a freelance developer almost ten years ago, I&apos;ve done
           remote work for businesses, consulted for startups, written articles for major newspapers,
-          appeared on national TV, and started several of my own companies.
+          appeared on national TV, and started several of my own ventures.
         </Body>
       </Row>
 
       <Row>
         <Body align="center">
           I like to wear many hats, and I&apos;m constantly looking to adapt and improve in whatever
-          I&apos;m doing. I love creating beautiful but functional UIs, and giving people that{' '}
-          <span style={{ color: '#427D7C' }}>wow</span> experience when they open up a website.
+          I&apos;m doing. I love creating beautiful but functional UIs, and giving people that wow
+          experience when they open up a website.
         </Body>
       </Row>
     </Grid>
