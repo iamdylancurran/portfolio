@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Header, Body } from '../../../components/typography/Typography';
 import { Grid, Row } from '../../../components/layout/Grid';
 import Accordion from '../../../components/misc/Accordion';
@@ -20,19 +21,9 @@ const projects = [
     link: 'https://vft-solutions.com',
   },
   {
-    title: 'Work In Progress',
-    description: 'Work In Progress',
-    tools: 'Work In Progress',
-  },
-  {
-    title: 'Work In Progress 2',
-    description: 'Work In Progress',
-    tools: 'Work In Progress',
-  },
-  {
-    title: 'Work In Progress 3',
-    description: 'Work In Progress',
-    tools: 'Work In Progress',
+    title: 'Working On It',
+    description: `As it stands, I've only worked on closed-source projects for the last three years. I'm currently authoring several open-source projects which will be displayed here when finished.`,
+    tools: 'Working On It',
   },
 ];
 
@@ -49,16 +40,16 @@ const Work = () => {
               <Body color="textSecondary">{item.tools}</Body>
               <Body color="textPrimary">{item.description}</Body>
               {item.link ? (
-                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <NoDecorationLink href={item.link} target="_blank" rel="noopener noreferrer">
                   <Button margin="0 0 0 0.3em">View Website</Button>
-                </a>
+                </NoDecorationLink>
               ) : (
                 <></>
               )}
               {item.github ? (
-                <a href={item.github} target="_blank" rel="noopener noreferrer">
+                <NoDecorationLink href={item.github} target="_blank" rel="noopener noreferrer">
                   <Button margin="0 0 0 0.3em">View on GitHub</Button>
-                </a>
+                </NoDecorationLink>
               ) : (
                 <></>
               )}
@@ -69,5 +60,9 @@ const Work = () => {
     </div>
   );
 };
+
+const NoDecorationLink = styled.a`
+  text-decoration: none;
+`;
 
 export default Work;
