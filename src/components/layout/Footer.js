@@ -40,8 +40,8 @@ const Footer = () => {
     <FooterContainer>
       <Grid justifyContent="center" alignItems="center" direction="row">
         {footerLinks.map((item) => (
-          <Row>
-            <FooterLink href={item.link} target="_blank" rel="noopener noreferrer" key={item.text}>
+          <Row key={item.text}>
+            <FooterLink href={item.link} target="_blank" rel="noopener noreferrer">
               <Body color="whitePrimary" align="center">
                 {item.text}
               </Body>
