@@ -26,12 +26,12 @@ const footerLinks = [
     text: 'Twitter',
   },
   {
-    link: 'https://github.com/iamdylancurran',
-    text: 'GitHub',
-  },
-  {
     link: 'https://www.linkedin.com/in/dylancurran/',
     text: 'LinkedIn',
+  },
+  {
+    link: 'https://github.com/iamdylancurran',
+    text: 'GitHub',
   },
   {
     link: '/resume',
