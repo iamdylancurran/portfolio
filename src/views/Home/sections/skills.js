@@ -5,7 +5,7 @@ import Card from '../../../components/misc/Card';
 import Divider from '../../../components/misc/Divider';
 import SvgIcon from '../../../components/misc/SvgIcon';
 
-const frontEndSkills = ['HTML', 'CSS', 'JavaScript', 'React', 'NextJS', 'Vue'];
+const frontEndSkills = ['HTML', 'CSS', 'JavaScript', 'React', 'NextJS', 'Typescript'];
 const backEndSkills = ['NodeJS', 'Express', 'MongoDB', 'SQL', 'Serverless', 'AWS'];
 const designSkills = [
   'UX/UI',

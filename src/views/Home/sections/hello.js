@@ -32,7 +32,7 @@ const Hello = () => {
         </Row>
         <Row>
           <SubHeader color="whitePrimary" margin="0" align="center">
-            I&apos;m a Front-End Web Developer.
+            I&apos;m a Software Engineer.
           </SubHeader>
         </Row>
       </OverlayContainer>
