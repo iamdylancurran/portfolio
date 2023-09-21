@@ -7,6 +7,12 @@ import Button from '../../../components/misc/Button';
 
 const projects = [
   {
+    title: 'Vena Solutions',
+    description: `As a staff software engineer at Vena Solutions, I collaborated extensively with the Calcs team to develop and deploy robust financial applications that help clients manage their data, budgets, and forecasts. I spearheaded three major initiatives: the Currency Exchange feature, the Allocations feature, and converting Vena's monolith to a microfrontend structure, using React, Typescript, and Webpack module federation. I also lead the updating of legacy packages throughout the application, including upgrading to React 18, converting Javascript to Typescript, and dozens of other packages like React Router and Webpack. I implemented advanced JavaScript methodologies across Vena's applications, and overhauled state management from an old version of Redux to a more modern stack of react-query.`,
+    tools: 'React, TypeScript, Webpack, Styled Components',
+    link: 'https://vena.io/',
+  },
+  {
     title: 'Thriver',
     description: `Thriver is a food and culture startup aimed at corporate clients. I joined the team as a senior front-end engineer. A large part of the job is taking ownership of a feature's journey and co-ordinating with stakeholders, as well as developing it in a responsible and timely manner. I developed features such as a full implementation of location-based services on the platform, platform-wide reviews, personalized recommendations, as well as many other projects`,
     tools: 'React, NextJS, TypeScript, SCSS, Apollo, GraphQL',

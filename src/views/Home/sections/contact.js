@@ -57,11 +57,11 @@ const Contact = () => {
           <input type="hidden" name="form-name" value="contact" />
           <Row>
             <Label htmlFor="name">Name:</Label>
-            <Input id="name" type="text" name="name" placeholder="Gordon Ramsey" required />
+            <Input id="name" type="text" name="name" placeholder="Your Name" required />
           </Row>
           <Row>
             <Label htmlFor="email">Email:</Label>
-            <Input type="email" name="email" placeholder="gor.don@lambsauce.com" required />
+            <Input type="email" name="email" placeholder="example@example.com" required />
           </Row>
           <Row>
             <Label htmlFor="message">Message:</Label>
